@@ -202,7 +202,20 @@ header{
 .socials a:hover {
     background-color: var(--primary-color);
 }
+.poular__grid{
+    margin-top: 4rem;
+    display: grid;
+    gap: 4rem 1rem;
+}
 
+.popular__card{
+    position: relative;
+    isolation: isolate;
+}
+
+.popular__card::before{
+    position: absolute;
+}
 
 @media (width > 768px) {
     nav {
